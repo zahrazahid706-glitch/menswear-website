@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Wear | Premium Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">MEN'S WEAR<span>.</span></div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#new">New Arrivals</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="bag" onclick="showBag()">BAG (0)</div>
+
+        <button onclick="demoCheckout()">VIEW ORDER SUMMARY</button>
+        
+<button onclick="checkoutWhatsApp()">ORDER ON WHATSAPP</button>
+
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero">
+        <p class="eyebrow">THE NEW SEASON COLLECTION</p>
+
+        <h1>OWN YOUR<br>STYLE.</h1>
+
+        <p class="description">
+            Timeless essentials. Modern attitude.
+        </p>
+
+        <a class="shop-button" href="#shop">
+            EXPLORE COLLECTION ↗
+        </a>
+    </main>
+
+    <!-- Search Bar -->
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search men's clothing..."
+        >
+        <button onclick="searchProducts()">SEARCH</button>
+    </div>
+
+    <!-- Shop Section -->
+    <section id="shop" class="collection">
+        <p>CURATED FOR YOU</p>
+        <h2>Wear Your Confidence.</h2>
+
+        <div class="products">
+
+            <!-- Product 1 -->
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
+                    alt="Essential T-Shirt"
+                >
+                <h3>Essential T-Shirt</h3>
+                <p>PKR 2,500</p>
+                <button class="add-btn"
+                    onclick="addToBag('Essential T-Shirt', 2500)">
+                    ADD TO BAG +
+                </button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80"
+                    alt="Classic Hoodie"
+                >
+                <h3>Classic Hoodie</h3>
+                <p>PKR 4,500</p>
+                <button class="add-btn"
+                    onclick="addToBag('Classic Hoodie', 4500)">
+                    ADD TO BAG +
+                </button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1627225924765-552d49cf47ad?auto=format&fit=crop&w=600&q=80"
+                    alt="Modern Essentials"
+                >
+                <h3>Modern Essentials</h3>
+                <p>PKR 3,500</p>
+                <button class="add-btn"
+                    onclick="addToBag('Modern Essentials', 3500)">
+                    ADD TO BAG +
+                </button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80"
+                    alt="Urban Jacket"
+                >
+                <h3>Urban Jacket</h3>
+                <p>PKR 5,500</p>
+                <button class="add-btn"
+                    onclick="addToBag('Urban Jacket', 5500)">
+                    ADD TO BAG +
+                </button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=600&q=80"
+                    alt="Classic Denim Jeans"
+                >
+                <h3>Classic Denim Jeans</h3>
+                <p>PKR 3,200</p>
+                <button class="add-btn"
+                    onclick="addToBag('Classic Denim Jeans', 3200)">
+                    ADD TO BAG +
+                </button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80"
+                    alt="Casual Shirt"
+                >
+                <h3>Casual Shirt</h3>
+                <p>PKR 2,800</p>
+                <button class="add-btn"
+                    onclick="addToBag('Casual Shirt', 2800)">
+                    ADD TO BAG +
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <p>MEN'S WEAR — STYLE THAT DEFINES YOU.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
